@@ -13,6 +13,10 @@ const food_schema = new mongoose.Schema({
         type:String,
         // required:true
     },
+    description:{
+        type:String
+
+    },
     category:{
         type:String,
         // required:true
@@ -21,7 +25,7 @@ const food_schema = new mongoose.Schema({
         type:String,
         // required:true
     },
-    feedback:[String]
+    //feedback:[String]
 });
 
 const Food = mongoose.model('Food',food_schema);

@@ -5,10 +5,12 @@ const app = express();
 const foodRouter = require('./routers/food-router');
 const userRouter = require('./routers/user-router');
 
-app.use(express.json());
+
+
 
 app.use(cors());
 
+app.use(express.json());
 const DB =
   "mongodb+srv://cse18107:cse18107@cluster0.itnji.mongodb.net/food-ordering-app?retryWrites=true&w=majority";
 

@@ -36,6 +36,7 @@ exports.getFood = async (req, res) => {
 
 exports.postFoodData = async (req, res) => {
   try {
+    console.log(req.body);
     const food_details = await Food.create(req.body);
     res.status(201).json({
       status: "success",
