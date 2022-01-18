@@ -1,0 +1,25 @@
+.home-page__body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.home-page__container{
+
+    width: 87%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 0.4%;
+
+}
+.card{
+    margin: 20px;
+    transition:0.5s;
+    box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.75);
+}
+.card:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
